@@ -1,66 +1,68 @@
-## Features
+简体中文 | [English](./README.md)
+## 功能
 ```
-- Login / Logout
-- Permission authentication
-- Multi-environment build
-- Dynamic sidebar (supports multi-level routing)
-- Dynamic breadcrumb
-- I18n
-- Customizable theme
-- Tags-view(Tab page Support right-click operation)
-- Rich text editor
-- Markdown editor
-- JSON editor
-- Screenfull
-- Drag and drop list
-- Svg Sprite
+- 登录/注销
+- 权限验证
+- 多环境发布
+- 动态侧边栏（支持多级路由）
+- 动态面包屑
+- 国际化多语言
+- 多种动态换肤
+- 快捷导航(标签页)
+- 富文本编辑器
+- Markdown编辑器
+- JSON编辑器
+- Screenfull全屏
+- 列表拖拽
+- Svg Sprite 图标
 - Dashboard
-- Mock data
-- Echarts
-- Clipboard
-- 401/404 error page
-- Error log
-- Export excel
-- Export zip
-- Front-end visualization excel
+- 本地mock数据
+- Echarts 图表
+- Clipboard(剪贴复制)
+- 401/404错误页面
+- 错误日志
+- 导出excel
+- 导出zip
+- 前端可视化excel
 - Table example
-- Dynamictable example
-- Drag and drop table example
-- Inline edit table example
+- 动态table example
+- 拖拽table example
+- 内联编辑table example
 - Form example
-- Two-step login
+- 二步登录
 - SplitPane
 - Dropzone
 - Sticky
 - CountTo
-- Markdown to html
+- Markdown2html
 ```
 
-## Getting started
-
+## 开发
 ```bash
-# clone the project
-git clone https://github.com/engiee/native.git
+# 克隆项目
+git clone https://github.com/engiee/native.gitd
 
-# install dependency
+# 安装依赖
 npm install
+   
+# 建议不要用cnpm安装 会有各种诡异的bug 可以通过如下操作解决 npm 下载速度慢的问题
+npm install --registry=https://registry.npm.taobao.org
 
-# develop
+# 启动服务
 npm run dev
 ```
+浏览器访问 http://localhost:9527
 
-This will automatically open http://localhost:9527.
-
-## Build
+## 发布
 ```bash
-# build for test environment
+# 构建测试环境
 npm run build:sit
 
-# build for production environment
+# 构建生成环境
 npm run build:prod
 ```
 
-## Advanced
+## 其它
 ```bash
 # --report to build with bundle size analytics
 npm run build:prod --report
